@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10sp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iphone12den"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Điện thoại IPHONE 12 - Hàng chính hãng"
+        android:paddingVertical="5sp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="5sp">
+
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:progressTint="@color/yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="(Xem 285 đánh giá)"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="5sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="19.690.000 đ"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/strike_line"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="5sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:text="NƠI NÀO GIÁ RẺ HƠN HOÀN TIỀN"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5sp"
+            android:src="@drawable/questionicon"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/chooseColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10sp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:drawableEnd="@drawable/nexticon"
+        android:text="4 MÀU - CHỌN LOẠI"/>
+    <Button
+        android:id="@+id/buyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:layout_marginTop="65dp"
+        android:text="CHỌN MUA" />
+</LinearLayout>
